@@ -49,6 +49,14 @@
         {
             "filePath": "-.txt",
             "group": "Default"
+        },
+        {
+            "filePath": "js/index.js",
+            "group": "Default"
+        },
+        {
+            "filePath": "js/myfunctions.js",
+            "group": "Default"
         }
     ]
 }
