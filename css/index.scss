@@ -17,6 +17,7 @@
     --main-color: #13bbff;
     --main-color2: #c3cad5;
     --theGray: #888888;
+    --theRed: #da2128;
 
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
@@ -195,7 +196,8 @@ z-index: 10;
 .portfolio__content {
     // max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2rem;
     margin-top: 1.4vw;
@@ -270,22 +272,26 @@ z-index: 10;
 
 .portfolio__svg--pub {
 
-height: 2vw;
+height: clamp(16px, 2.5vw, 24px);
 
 }
 
 .portfolio__title {
 
 color: white;
-font-size: 2.25vw;
+font-size: clamp(16px, 2.5vw, 24px);
 font-family: "Bold";
 display: inline-block;
-    text-indent: -3.75vw; /* Adjust this value as needed */
-    padding-left: 3.75vw;
-    line-height: 1;
+ 
     
 }
 
+.portfolio__bold {
+
+color: red;
+font-family: "Bold";
+
+}
 
 //>  ████████████████████████████████████  SERVICES MEDIUM
 
@@ -315,9 +321,7 @@ display: inline-block;
 }
 
 .services__center-text h2 {
-    font-size: clamp(10px, 4vw, 32px);
-    font-family: 'Bold';
-    color: var(--theGray);
+   
 }
 
 .services__box {
