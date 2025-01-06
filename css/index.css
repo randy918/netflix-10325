@@ -115,6 +115,18 @@ header {
   transition: all 0.5s ease;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  padding: 0.5 rem;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: red;
+  border-radius: 0.25rem;
+  z-index: 10;
+}
+
 .portfolio {
   background: var(--bg-color2);
   max-width: 960px;
@@ -174,6 +186,19 @@ header {
 .portfolio__row-text--1 {
   display: flex;
   width: 4vw;
+}
+
+.portfolio__svg--pub {
+  height: 2vw;
+}
+
+.portfolio__title {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "Bold";
+  display: inline-block;
+  text-indent: -60px; /* Adjust this value as needed */
+  padding-left: 60px;
 }
 
 .services {
